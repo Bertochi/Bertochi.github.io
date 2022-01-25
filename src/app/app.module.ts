@@ -21,43 +21,42 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
-import { NavComponent } from './views/components/template/nav/nav.component';
+
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoReadComponent } from './views/components/tecnicos/tecnico-read/tecnico-read.component';
 import { TecnicoCreateComponent } from './views/components/tecnicos/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './views/components/tecnicos/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './views/components/tecnicos/tecnico-delete/tecnico-delete.component';
-import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
-import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
-import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
-import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { OsReadComponent } from './views/components/os/os-read/os-read.component';
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
 import { OsViewComponent } from './views/components/os/os-view/os-view.component';
 import { MatMenuModule} from '@angular/material/menu';
-import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component'
+import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
+import { OrdemReadComponent } from './views/components/ordem/ordem-read/ordem-read.component';
+import { OrdemComprarComponent } from './views/components/ordem/ordem-comprar/ordem-comprar.component';
+import { OrdemVenderComponent } from './views/components/ordem/ordem-vender/ordem-vender.component';
+import { NavComponent } from './views/components/template/nav/nav.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
     HomeComponent,
     TecnicoReadComponent,
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
     TecnicoDeleteComponent,
-    ClienteReadComponent,
-    ClienteCreateComponent,
-    ClienteUpdateComponent,
-    ClienteDeleteComponent,
     OsReadComponent,
     OsCreateComponent,
     OsUpdateComponent,
     OsViewComponent,
-    OsClosedComponent
+    OsClosedComponent,
+    OrdemReadComponent,
+    OrdemComprarComponent,
+    OrdemVenderComponent,
+    NavComponent
   ],
   imports: [
     MatMenuModule,

@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
-import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
-import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
-import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { HomeComponent } from './views/components/home/home.component';
+import { OrdemComprarComponent } from './views/components/ordem/ordem-comprar/ordem-comprar.component';
+import { OrdemReadComponent } from './views/components/ordem/ordem-read/ordem-read.component';
+import { OrdemVenderComponent } from './views/components/ordem/ordem-vender/ordem-vender.component';
 import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsReadComponent } from './views/components/os/os-read/os-read.component';
@@ -21,37 +20,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'tecnicos',
-    component: TecnicoReadComponent
-  },
-  {
-    path: 'tecnicos/create',
-    component: TecnicoCreateComponent
-  },
-  {
-    path: 'tecnicos/update/:id',
-    component: TecnicoUpdateComponent
-  },
-  {
     path: 'tecnicos/delete/:id',
     component: TecnicoDeleteComponent
   },
-  {
-    path: 'clientes',
-    component: ClienteReadComponent
-  },
-  {
-    path: 'clientes/create',
-    component: ClienteCreateComponent
-  },
-  {
-    path: 'clientes/update/:id',
-    component: ClienteUpdateComponent
-  },
-  {
-    path: 'clientes/delete/:id',
-    component: ClienteDeleteComponent
-  },
+
   {
     path: 'os',
     component: OsReadComponent
@@ -71,6 +43,18 @@ const routes: Routes = [
   {
     path: 'os/view/:id',
     component: OsViewComponent
+  },
+  {
+    path: 'ordem/pesquisa/:id',
+    component: OrdemReadComponent
+  },
+  {
+    path: 'ordem/comprar/:id',
+    component: OrdemComprarComponent
+  },
+  {
+    path: 'ordem/vender/:id',
+    component: OrdemVenderComponent
   }
 ];
 

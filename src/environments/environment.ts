@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://curso-os-udemy.herokuapp.com'
+  baseUrl: 'https://provaavaliativa.herokuapp.com'
 };
 
 /*
